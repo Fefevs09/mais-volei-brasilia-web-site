@@ -27,6 +27,39 @@ export default function Home() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
+  const fotos = [
+    {
+      id: 0,
+      url: "/images/equipe-mvb-base.jpeg",
+      alt: "",
+    },
+    {
+      id: 1,
+      url: "/images/viagem-p-Goiania-em-Marco-2025.jpeg",
+      alt: "",
+    },
+    {
+      id: 2,
+      url: "/images/foto-04.jpeg",
+      alt: "",
+    },
+    {
+      id: 3,
+      url: "/images/foto-03.jpeg",
+      alt: "",
+    },
+    {
+      id: 4,
+      url: "/images/foto-02.jpeg",
+      alt: "",
+    },
+    {
+      id: 5,
+      url: "/images/foto-05.jpeg",
+      alt: "",
+    },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -197,7 +230,7 @@ export default function Home() {
               </div>
               <div className="mx-auto w-full max-w-[400px] lg:max-w-none order-first lg:order-last">
                 <Image
-                  src="/placeholder.svg?key=m93i2"
+                  src="/images/equipe-mvb-base.jpeg"
                   width={550}
                   height={550}
                   alt="Equipe Mais Vôlei Brasília em ação"
@@ -217,7 +250,7 @@ export default function Home() {
                 </h2>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-[900px] mx-auto pt-4">
                   O MAIS VÔLEI vem desenvolvendo suas atividades na prática da
-                  modalidade voleibol para mais de 80 atletas femininas, das
+                  modalidade voleibol para mais de 20 atletas femininas, das
                   categorias iniciantes, até a categoria adulta. Referência no
                   cenário do voleibol da capital, O MAIS VÔLEI vem desempenhado
                   um papel relevante a nível competitivo.
@@ -397,18 +430,16 @@ export default function Home() {
                 </p>
               </div>
               <div className="mx-auto grid max-w-5xl gap-3 sm:gap-4 py-8 md:py-12 grid-cols-2 md:grid-cols-3">
-                {Array.from({ length: 6 }).map((_, index) => (
+                {fotos.map((index) => (
                   <div
-                    key={index}
+                    key={index.id}
                     className="overflow-hidden rounded-lg border-2 border-secondary/30 hover:border-secondary transition-all duration-300 group"
                   >
                     <Image
-                      src={`/placeholder.svg?key=ufd2q&key=7cyqe&key=a5lxj&height=300&width=400&query=voleibol feminino jogo ${
-                        index + 1
-                      }`}
+                      src={index.url}
                       width={400}
                       height={300}
-                      alt={`Momento da equipe Mais Vôlei Brasília ${index + 1}`}
+                      alt={index.alt}
                       className="rounded-lg object-cover w-full h-40 sm:h-48 md:h-64 group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
