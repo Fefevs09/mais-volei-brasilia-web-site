@@ -283,6 +283,42 @@ export default function TransparenciaPage() {
       url: "/files/LIVRO-RAZÃO-2024-ADMSCSDF.pdf",
       category: "auditoria",
     },
+    {
+      id: 10,
+      name: "ANEXO I",
+      date: "05/06/2025",
+      size: "22 KB",
+      type: "DOCX",
+      url: "/files/ANEXO-I.docx",
+      category: "contratos",
+    },
+    {
+      id: 11,
+      name: "ANEXO II",
+      date: "05/06/2025",
+      size: "14 KB",
+      type: "DOCX",
+      url: "/files/ANEXO-II.docx",
+      category: "contratos",
+    },
+    {
+      id: 12,
+      name: "ANEXO III",
+      date: "05/06/2025",
+      size: "14 KB",
+      type: "DOCX",
+      url: "/files/ANEXO-III.docx",
+      category: "contratos",
+    },
+    {
+      id: 13,
+      name: "Minuta de Edital de Cotação Prévia - Mais Vôlei",
+      date: "05/06/2025",
+      size: "216 KB",
+      type: "PDF",
+      url: "/files/MINUTA-DE-EDITAL-DE-COTAÇÃO-PREVIA-MAIS-VOLEI.pdf",
+      category: "contratos",
+    },
   ];
 
   const filteredDocuments = documents.filter((doc) => {
