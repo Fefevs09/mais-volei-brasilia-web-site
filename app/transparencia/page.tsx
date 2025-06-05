@@ -377,8 +377,8 @@ export default function TransparenciaPage() {
       </header>
 
       <div className="container py-8">
-        <Tabs defaultValue="dashboard" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-8">
+        <Tabs defaultValue="dashboard" className="w-full p-10">
+          <TabsList className="grid w-full grid-cols-2 pb-10">
             <TabsTrigger value="dashboard" className="font-bebas text-base">
               Dashboard Financeiro
             </TabsTrigger>
