@@ -107,7 +107,7 @@ export default function Home() {
               Agenda
             </Link>
             <Link
-              href="#galeria"
+              href="/galeria"
               className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               Galeria
@@ -445,6 +445,14 @@ export default function Home() {
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="flex items-center justify-center pt-4">
+              <Link
+                href="/galeria"
+                className="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+              >
+                Ver Mais
+              </Link>
             </div>
           </div>
         </section>
