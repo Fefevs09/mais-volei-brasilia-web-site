@@ -95,10 +95,10 @@ export default function Home() {
               Sobre
             </Link>
             <Link
-              href="#equipe"
+              href="#projetos"
               className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
-              Equipe
+              Projetos
             </Link>
             <Link
               href="#agenda"
@@ -155,11 +155,11 @@ export default function Home() {
                 Sobre
               </Link>
               <Link
-                href="#equipe"
+                href="#projetos"
                 className="py-3 px-4 text-sm font-medium hover:bg-accent rounded-md"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Equipe
+                Projetos
               </Link>
               <Link
                 href="#agenda"
@@ -217,8 +217,8 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 justify-center lg:justify-start">
-                  <Button className="bg-primary hover:bg-primary/90">
-                    Conheça nossa equipe
+                  <Button className="bg-primary hover:bg-primary/90" asChild>
+                    <Link href="#projetos">Conheça nossos projetos</Link>
                   </Button>
                   <Button
                     variant="outline"
@@ -296,53 +296,58 @@ export default function Home() {
         </section>
 
         <section
-          id="equipe"
+          id="projetos"
           className="w-full py-8 md:py-16 lg:py-24 bg-accent"
         >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-6">
                 <h2 className="text-3xl sm:text-4xl font-bold tracking-tighter md:text-5xl lg:text-6xl text-primary section-title">
-                  Nossa Equipe
+                  Nossos Projetos
                 </h2>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-[900px] mx-auto pt-4">
-                  Conheça as atletas e a comissão técnica que fazem o Mais Vôlei
-                  Brasília acontecer.
+                  Conheça os projetos sociais e esportivos que desenvolvemos
+                  para promover o vôlei e a inclusão.
                 </p>
               </div>
-              <div className="mx-auto grid max-w-5xl gap-6 md:gap-8 py-8 md:py-12 grid-cols-2 md:grid-cols-3">
+              <div className="mx-auto grid max-w-5xl gap-6 md:gap-8 py-8 md:py-12 grid-cols-1 md:grid-cols-2">
                 {[
-                  { name: "Ana Silva", position: "Levantadora" },
-                  { name: "Carlos Oliveira", position: "Técnico" },
-                  { name: "Juliana Santos", position: "Ponteira" },
-                  { name: "Marcos Lima", position: "Preparador Físico" },
-                  { name: "Patrícia Costa", position: "Líbero" },
-                  { name: "Roberto Alves", position: "Assistente Técnico" },
-                ].map((member, index) => (
-                  <div
+                  {
+                    name: "Projeto Inclusão",
+                    description: "Programa para jovens",
+                    slug: "projeto-inclusao",
+                    image: "/images/maisvolei2.jpeg",
+                  },
+                  {
+                    name: "Queiroz Jiu-jitsu",
+                    description: "Competição para atletas em formação",
+                    slug: "torneio-juvenil",
+                    image: "/images/JL Queiroz - Graduação 2025-109.jpg",
+                  },
+                ].map((projeto, index) => (
+                  <Link
                     key={index}
-                    className="flex flex-col items-center space-y-2 group"
+                    href={`/projetos/${projeto.slug}`}
+                    className="flex flex-col items-center space-y-4 group cursor-pointer"
                   >
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-secondary/20 transition-transform duration-300 group-hover:scale-105">
+                    <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-lg overflow-hidden bg-secondary/20 transition-transform duration-300 group-hover:scale-105">
                       <Image
-                        src={`/placeholder.svg?key=9qyby&key=88swl&key=gzo6k&height=200&width=200&query=jogador de volei ${
-                          index + 1
-                        }`}
-                        width={200}
-                        height={200}
-                        alt={member.name}
+                        src={projeto.image}
+                        width={300}
+                        height={300}
+                        alt={projeto.name}
                         className="object-cover w-full h-full"
                       />
                     </div>
-                    <div className="space-y-1">
-                      <h3 className="text-base sm:text-lg md:text-xl font-bold font-bebas">
-                        {member.name}
+                    <div className="space-y-2 text-center">
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold font-bebas">
+                        {projeto.name}
                       </h3>
-                      <p className="text-xs sm:text-sm text-muted-foreground">
-                        {member.position}
+                      <p className="text-sm sm:text-base text-muted-foreground max-w-xs">
+                        {projeto.description}
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
