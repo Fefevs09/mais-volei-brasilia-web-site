@@ -9,12 +9,12 @@ const projetos = {
     name: "Projeto Inclusão",
     description: "Programa para jovens em situação de vulnerabilidade",
     details:
-      "O Projeto Inclusão visa integrar jovens de comunidades carentes através do vôlei, promovendo valores como disciplina e trabalho em equipe. Oferecemos aulas gratuitas, equipamentos e acompanhamento psicológico para ajudar no desenvolvimento pessoal e esportivo.",
+      "O Projeto Inclusão visa integrar jovens através do vôlei, promovendo valores como disciplina e trabalho em equipe. Oferecemos aulas gratuitas para ajudar no desenvolvimento pessoal e esportivo.",
     image: "/images/maisvolei2.jpeg",
   },
-  "torneio-juvenil": {
-    name: "Torneio Juvenil",
-    description: "Competição para atletas em formação",
+  "queiroz-bjj": {
+    name: "TEAM QUEIROZ BJJ",
+    description: "Focado na formação de cidadãos e atletas de alto rendimento.",
     details:
       "Anualmente organizamos torneios para atletas juvenis, proporcionando experiência competitiva e desenvolvimento técnico. Participam equipes de todo o Distrito Federal, com premiações e reconhecimento para os destaques.",
     image: "/images/JL Queiroz - Graduação 2025-109.jpg",

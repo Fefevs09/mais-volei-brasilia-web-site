@@ -250,7 +250,7 @@ export default function Home() {
                 </h2>
                 <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-[900px] mx-auto pt-4">
                   O MAIS VÔLEI vem desenvolvendo suas atividades na prática da
-                  modalidade voleibol para mais de 20 atletas femininas, das
+                  modalidade voleibol para mais de 200 atletas femininas, das
                   categorias iniciantes, até a categoria adulta. Referência no
                   cenário do voleibol da capital, O MAIS VÔLEI vem desempenhado
                   um papel relevante a nível competitivo.
@@ -286,8 +286,8 @@ export default function Home() {
                     Valores
                   </h3>
                   <p className="text-sm sm:text-base text-muted-foreground">
-                    Honestidade, ética, espírito de equipe, disciplina e paixão
-                    pelo esporte.
+                    Honestidade, ética, espírito de equipe, disciplina, paixão
+                    pelo esperte e servir ao outro!
                   </p>
                 </div>
               </div>
@@ -313,15 +313,17 @@ export default function Home() {
               <div className="mx-auto grid max-w-5xl gap-6 md:gap-8 py-8 md:py-12 grid-cols-1 md:grid-cols-2">
                 {[
                   {
-                    name: "Projeto Inclusão",
-                    description: "Programa para jovens",
+                    name: "Projeto Mais Vôlei Transformando Vidas",
+                    description:
+                      "Desenvolvimento do voleibol em Brasília com foco em rendimento e social.",
                     slug: "projeto-inclusao",
                     image: "/images/maisvolei2.jpeg",
                   },
                   {
-                    name: "Queiroz Jiu-jitsu",
-                    description: "Competição para atletas em formação",
-                    slug: "torneio-juvenil",
+                    name: "TEAM QUEIROZ BJJ",
+                    description:
+                      "Focado na formação de cidadãos e atletas de alto rendimento.",
+                    slug: "queiroz-bjj",
                     image: "/images/JL Queiroz - Graduação 2025-109.jpg",
                   },
                 ].map((projeto, index) => (
