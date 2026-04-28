@@ -121,8 +121,56 @@ export default function Galeria() {
     {
       id: 17,
       url: "/images/JL Queiroz - Graduação 2025-109.jpg",
-      alt: "",
+      alt: "Graduação Equipe Queiroz Jiu-jitsu",
       descricao: "Graduação Equipe Queiroz Jiu-jitsu - Dezembro 2025",
+    },
+    {
+      id: 18,
+      url: "/images/jlqueiroz1.jpeg",
+      alt: "JL Queiroz Jiu-jitsu 1",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 19,
+      url: "/images/jlqueiroz2.jpeg",
+      alt: "JL Queiroz Jiu-jitsu 2",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 20,
+      url: "/images/jlqueiroz3.jpeg",
+      alt: "JL Queiroz Jiu-jitsu 3",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 21,
+      url: "/images/jlqueiroz4.jpeg",
+      alt: "JL Queiroz Jiu-jitsu 4",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 22,
+      url: "/images/jlqueiroz5.jpeg",
+      alt: "JL Queiroz Jiu-jitsu 5",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 23,
+      url: "/images/jlqueiroz6.jpeg",
+      alt: "JL Queiroz Jiu-jitsu 6",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 24,
+      url: "/images/jlqueiroz7.jpg",
+      alt: "JL Queiroz Jiu-jitsu 7",
+      descricao: "Equipe Queiroz Jiu-jitsu",
+    },
+    {
+      id: 25,
+      url: "/images/jlqueiroz8.jpg",
+      alt: "JL Queiroz Jiu-jitsu 8",
+      descricao: "Equipe Queiroz Jiu-jitsu",
     },
   ];
 

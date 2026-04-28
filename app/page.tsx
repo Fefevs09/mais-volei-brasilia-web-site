@@ -31,32 +31,32 @@ export default function Home() {
     {
       id: 0,
       url: "/images/equipe-mvb-base.jpeg",
-      alt: "",
+      alt: "Equipe Mais Vôlei Brasília",
     },
     {
       id: 1,
-      url: "/images/viagem-p-Goiania-em-Marco-2025.jpeg",
-      alt: "",
+      url: "/images/maisvolei3.jpeg",
+      alt: "Mais Vôlei Brasília em ação",
     },
     {
       id: 2,
-      url: "/images/foto-04.jpeg",
-      alt: "",
+      url: "/images/jlqueiroz1.jpeg",
+      alt: "Equipe Queiroz Jiu-jitsu",
     },
     {
       id: 3,
-      url: "/images/foto-03.jpeg",
-      alt: "",
+      url: "/images/maisvolei7.jpeg",
+      alt: "Momento especial do Mais Vôlei",
     },
     {
       id: 4,
-      url: "/images/foto-02.jpeg",
-      alt: "",
+      url: "/images/jlqueiroz5.jpeg",
+      alt: "Equipe Queiroz Jiu-jitsu",
     },
     {
       id: 5,
-      url: "/images/foto-05.jpeg",
-      alt: "",
+      url: "/images/maisvolei10.jpeg",
+      alt: "Mais Vôlei Brasília",
     },
   ];
 
