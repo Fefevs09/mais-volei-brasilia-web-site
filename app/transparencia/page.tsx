@@ -212,6 +212,15 @@ export default function TransparenciaPage() {
       category: "prestacao",
     },
     {
+      id: 14,
+      name: "Documento de Transparência",
+      date: "20/08/2026",
+      size: "3.8 MB",
+      type: "PDF",
+      url: "/files/transparencia.pdf",
+      category: "prestacao",
+    },
+    {
       id: 2,
       name: "Balancete 2022 ADMSCSDF",
       date: "01/12/2022",
