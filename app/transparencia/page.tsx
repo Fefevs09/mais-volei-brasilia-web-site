@@ -348,14 +348,21 @@ export default function TransparenciaPage() {
     },
   ];
 
-  const filteredDocuments = documents.filter((doc) => {
-    const matchesType =
-      selectedDocType === "todos" || doc.category === selectedDocType;
-    const matchesSearch = doc.name
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
-    return matchesType && matchesSearch;
-  });
+  const parseDate = (dateStr: string) => {
+    const [day, month, year] = dateStr.split("/").map(Number);
+    return new Date(year, month - 1, day).getTime();
+  };
+
+  const filteredDocuments = documents
+    .filter((doc) => {
+      const matchesType =
+        selectedDocType === "todos" || doc.category === selectedDocType;
+      const matchesSearch = doc.name
+        .toLowerCase()
+        .includes(searchTerm.toLowerCase());
+      return matchesType && matchesSearch;
+    })
+    .sort((a, b) => parseDate(b.date) - parseDate(a.date));
 
   return (
     <div className="min-h-screen bg-background">
