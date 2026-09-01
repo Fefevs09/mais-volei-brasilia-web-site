@@ -239,6 +239,15 @@ export default function TransparenciaPage() {
       category: "prestacao",
     },
     {
+      id: 17,
+      name: "Extrato da Proposta",
+      date: "01/09/2026",
+      size: "73 KB",
+      type: "PDF",
+      url: "/files/ExtratoProposta.pdf",
+      category: "contratos",
+    },
+    {
       id: 2,
       name: "Balancete 2022 ADMSCSDF",
       date: "01/12/2022",
