@@ -77,7 +77,7 @@ const documents: TransparencyDocument[] = [
     date: "01/09/2026",
     size: "395 KB",
     type: "PDF",
-    url: "/files/TERMO DE FOMENTO Associação Desportiva Mens Sana In Corpore Sano do DF - ADMSCSDF.pdf",
+    url: "/files/termo-de-formento.pdf",
     category: "contratos",
     year: "2026",
   },
@@ -98,16 +98,6 @@ const documents: TransparencyDocument[] = [
     size: "—",
     type: "PDF",
     url: "/files/Painel_ParceriasGov.pdf",
-    category: "prestacao",
-    year: "2026",
-  },
-  {
-    id: 4,
-    name: "Documento de Transparência",
-    date: "20/08/2026",
-    size: "3.8 MB",
-    type: "PDF",
-    url: "/files/transparencia.pdf",
     category: "prestacao",
     year: "2026",
   },
@@ -314,8 +304,7 @@ export default function TransparenciaPage() {
     .filter((document) => {
       const matchesYear = document.year === selectedYear;
       const matchesCategory =
-        selectedCategory === "todos" ||
-        document.category === selectedCategory;
+        selectedCategory === "todos" || document.category === selectedCategory;
       const matchesSearch = document.name
         .toLowerCase()
         .includes(searchTerm.toLowerCase());
